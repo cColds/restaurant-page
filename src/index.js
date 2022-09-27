@@ -1,3 +1,3 @@
-setTimeout(() => {
-	alert("Hello");
-}, 250);
+import { home } from "./pageLoad.js";
+
+home();
