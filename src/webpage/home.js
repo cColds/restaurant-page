@@ -1,6 +1,6 @@
 // pageLoad.js
-import "./styles.css";
-import chef from "./images/chef.png";
+import "../styles.css";
+import chef from "../images/chef.png";
 
 const content = document.querySelector("#content");
 
@@ -24,7 +24,7 @@ function header() {
 	navigationTabs.append(homeTab, menuTab, contactTab);
 
 	for (const el of navigationTabs.children) {
-		el.classList.add("navItems");
+		el.classList.add("navItems", el.textContent.toLowerCase());
 	}
 
 	headerContainer.appendChild(headerTitle);
@@ -50,7 +50,7 @@ function homeCard() {
 	cardHeading.textContent = "Welcome to Cravely's Restaurant";
 	motto.textContent = "“Eat for cheap, crave for more.”";
 	description.textContent =
-		"We are restaurant that serves premium, fresh ingredients, focusing on asian cuisine.";
+		"We are restaurant that serves premium, fresh ingredients, and we primarily focus on oriental cuisine.";
 	callToAction.textContent = "Order here today!";
 	menuButton.textContent = "View Menu";
 	contactButton.textContent = "Contact Us";
@@ -63,6 +63,7 @@ function homeCard() {
 	buttonContainer.classList.add("buttonContainer");
 	menuButton.classList.add("homeButton");
 	contactButton.classList.add("homeButton");
+	callToAction.classList.add("callToAction");
 
 	buttonContainer.append(menuButton, contactButton);
 	card.append(
@@ -76,8 +77,19 @@ function homeCard() {
 	cardContainer.appendChild(card);
 	content.appendChild(cardContainer);
 }
+
+function isContentNotEmpty() {
+	const cardElement = content.children[1];
+	if (cardElement) {
+		cardElement.innerHTML = "";
+		cardElement.remove();
+	}
+}
+
 function home() {
-	header();
+	const headerElement = content.children[0];
+	if (!headerElement) header();
+	isContentNotEmpty();
 	homeCard();
 }
 export { home };
