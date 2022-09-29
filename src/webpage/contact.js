@@ -5,6 +5,8 @@ export default function contact() {
 	card.style.width = "800px";
 	card.style.height = "650px";
 
+	card.classList.remove("menu");
+
 	const contactUsHeading = document.createElement("div");
 	const contactInfo = document.createElement("div");
 	const hoursHeading = document.createElement("div");
@@ -23,10 +25,10 @@ export default function contact() {
 	hoursAvailable.textContent = "Mon-Fri: 10:30 AM - 8:00PM";
 	hoursUnavailable.textContent = "Sun & Mon: Closed";
 	contactHeading.textContent = "Contact Info";
-	phoneNumber.textContent = "321-1532-3123";
-	email.textContent = "support@innersloth.com";
+	phoneNumber.textContent = "📞 65 5342 8321";
+	email.textContent = "📧 support@cravely.com";
 	locationHeading.textContent = "Location";
-	location.textContent = "Yan Ting, Singapore 247912, Singapore";
+	location.textContent = "🏠 Yan Ting, Singapore 247912, Singapore";
 
 	locationImage.src = googleMaps;
 	locationImage.style.width = "500px";

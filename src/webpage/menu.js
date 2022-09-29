@@ -19,13 +19,13 @@ function createDishes() {
 		{
 			photo: sushi,
 			name: "Sushi",
-			description:
-				"Rice, Seaweed, Avocado, Salmon(?), Caviar (or maybe fish egg, I forgor 💀)",
+			description: "Rice, Seaweed, Avocado, Salmon, Caviar",
 		},
 		{
 			photo: curry,
 			name: "Curry",
-			description: "Rice, Spices, Naan, Water, Milk, etc ",
+			description:
+				"Rice, Spices, Naan, Water, Milk, Cilantro, Cauliflower",
 		},
 		{
 			photo: dumplings,
@@ -41,7 +41,8 @@ function createDishes() {
 		{
 			photo: ramen,
 			name: "Ramen",
-			description: "Egg, Water, Seasoning, Green Onions, etc",
+			description:
+				"Egg, Water, Broth, Green Onions, Noodles, Oil, Seasoning",
 		},
 		{
 			photo: springRolls,
