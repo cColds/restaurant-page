@@ -16,9 +16,9 @@ body {
 	background-size: cover;
 	background-position: center;
 }
+
 #content {
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 100vh;
+	height: 100%;
 }
 
 .header {
@@ -48,14 +48,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
+	height: calc(100% - 100px);
 }
 
 .card {
 	display: flex;
 	align-items: center;
 	padding-top: 20px;
-
 	flex-direction: column;
 	width: 800px;
 	height: 650px;
@@ -96,4 +95,27 @@ body {
 .homeDescription {
 	max-width: 550px;
 	margin-top: 15px;
+}
+
+.card.menu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+}
+
+.dishCards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	height: 400px;
+	background-color: white;
+	color: black;
+	gap: 15px;
+}
+
+.dishDescription {
+	font-size: 0.95rem;
+	font-weight: 100;
 }
