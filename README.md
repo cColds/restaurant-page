@@ -1,5 +1,3 @@
-
-https://ccolds.github.io/restaurant-page/
 <div  align=center>
 	<h1>Restaurant Page
 	<br>
